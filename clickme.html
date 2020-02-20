@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>click me</title>
+</head>
+<body>
+	
+	
+
+<script type="text/javascript">
+	
+		var series = new Array("F.R.I.E.N.D.S", "Stranger Things", "Death Note", "Vampire Daires", "Money Heist");
+		Array.prototype.displayItems=function(){
+		for(i=0;i<this.length;i++)
+		{
+			document.write(this[i]+ "<br>");
+		}
+	}
+	document.write("Series array<br>");
+	series.displayItems();
+
+	document.write("<br>The number of items in series array is "+series.length+"<br>");
+	document.write("<br>The sorted series array<br>");
+	series.sort();
+	series.displayItems();
+
+	document.write("<br>The reversed series array<br>");
+	series.reverse();
+	series.displayItems();
+	document.write("<br>The series array after removing the Last item<br>");
+	series.pop();
+	series.displayItems();
+	document.write("<br>The Series array after Push<br>");
+	series.push("Suites");
+	series.displayItems();
+
+</script>
+
+</body>
+</html>
